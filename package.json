@@ -1,0 +1,21 @@
+{
+  "name": "vue-popup",
+  "version": "1.0.0",
+  "description": "Popup with notify, confirm base on Vue",
+  "main": "index.js",
+  "repository": "git@github.com:StockinTea/vue-popup.git",
+  "author": "StockinTea <devinjtt@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "",
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "^2.3.3",
+    "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-vue": "^5.1.6"
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
+}
