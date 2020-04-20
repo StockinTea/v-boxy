@@ -29,7 +29,7 @@
   </popup>
 </template>
 <script>
-import Popup from './Popup'
+import Popup from './Popup.vue'
 
 export default {
   name: 'Notify',

@@ -1,5 +1,5 @@
 {
-  "name": "vue-popup",
+  "name": "v-boxy",
   "version": "1.0.0",
   "description": "Popup with notify, confirm base on Vue",
   "main": "index.js",
@@ -11,9 +11,12 @@
     "build": "rollup -c"
   },
   "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.1",
+    "@rollup/plugin-node-resolve": "^7.1.1",
     "rollup": "^2.3.3",
     "rollup-plugin-terser": "^5.3.0",
-    "rollup-plugin-vue": "^5.1.6"
+    "rollup-plugin-vue": "^5.1.6",
+    "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
     "vue": "^2.6.11"

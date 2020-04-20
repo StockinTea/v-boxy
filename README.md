@@ -1,5 +1,28 @@
 # Vue Popup
 
-Lightweight and mobile friendly date time picker based on Vue.
-Vue date pick emphasizes performance, elegant and usable UI on all screen sizes and
-simplicity of configuration. Has no dependencies on css frameworks or date libraries. Weighs less then 5KB.
+> Without any plugin, clear javascript and vue !
+
+## Installation
+
+```bash
+yarn add -D vue-popup
+```
+
+```javascript
+import VPopup from 'v-boxy'
+
+Vue.use(VPopup)
+```
+
+## Baisc Usage
+
+```javascript
+const func = async () => {
+  await this.$confirm('Are you sure to exit ?')
+  // do something ...
+}
+```
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)

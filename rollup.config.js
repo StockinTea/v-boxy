@@ -1,25 +1,29 @@
 import { terser } from "rollup-plugin-terser";
+import Vue from "rollup-plugin-vue";
+import buble from '@rollup/plugin-buble'
 
 export default {
   input: 'src/main.js',
   output: [
     {
-      file: 'dist/vue-popup.js',
+      name: 'umd-v-boxy',
+      file: 'dist/v-boxy.js',
+      format: 'umd'
+    },
+    {
+      name: 'umd-v-boxy-min',
+      file: 'dist/v-boxy.min.js',
+      format: 'umd',
+      plugins: [terser()]
+    },
+    {
+      name: 'cjs-v-boxy',
+      file: 'dist/v-boxy-cjs.js',
       format: 'cjs'
-    },
-    {
-      file: 'dist/vue-popup.min.js',
-      format: 'cjs',
-      plugins: [terser({
-        compress: {
-          ecma: 2015,
-          pure_getters: true
-        }
-      })]
-    },
-    {
-      file: 'dist/vue-popup-es.js',
-      format: 'es'
     }
+  ],
+  plugins: [
+    Vue(),
+    buble()
   ]
 }
